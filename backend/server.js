@@ -29,7 +29,7 @@ const connectDB = async () => {
 connectDB()
 
 // Make the upload folder static
-const __dirname = path.resolve
+const __dirname = path.resolve()
 
 // Initialize the routes
 if (process.env.NODE_ENV === 'production') {
