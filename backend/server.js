@@ -2,6 +2,7 @@ import path from 'path'
 import express from 'express'
 import mongoose from 'mongoose'
 import dotenv from 'dotenv'
+import listProducts from './crud.js'
 
 // Initialize dot Env
 dotenv.config()
@@ -51,3 +52,6 @@ app.listen(
     `Server is running in ${process.env.NODE_ENV} mode on port ${PORT}`
   )
 )
+
+// Fetch LIST OF products and display them on Console
+listProducts()
